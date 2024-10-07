@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="402dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appimg" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="100"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/txtdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="100"
+        android:inputType="text"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/txtname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtname"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <EditText
+        android:id="@+id/txtphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="100"
+        android:inputType="text"
+        android:text="Phone Number"
+        app:layout_constraintEnd_toEndOf="@+id/txtdesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtdesc"
+        app:layout_constraintTop_toBottomOf="@+id/txtdesc" />
+
+    <EditText
+        android:id="@+id/txtwebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="100"
+        android:inputType="text"
+        android:text="Website"
+        app:layout_constraintEnd_toEndOf="@+id/txtphonenum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtphonenum"
+        app:layout_constraintTop_toBottomOf="@+id/txtphonenum" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtwebsite"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtwebsite"
+        app:layout_constraintTop_toBottomOf="@+id/txtwebsite" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/txtwebsite" />
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
